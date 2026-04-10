@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=Aries CV Demo
+Icon=aries-cv-demo.png
+Type=Application
+Exec=/usr/bin/env bash -lc 'cd "$HOME/aries-cv-demo" && ./run.sh'
+Terminal=true
