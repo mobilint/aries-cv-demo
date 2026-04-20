@@ -1,0 +1,12 @@
+pipeline_config_defaults:
+  num_classes: 2
+  conf_threshold: 0.25
+  iou_threshold: 0.45
+  draw_score_text: true
+
+models:
+  - pipeline_type: yolo26_det
+    input_type: uint8
+    mxq_path: ../mxq/yolo26s-weapon_uint8_input.mxq
+    device: 0
+    num_core: 8

@@ -1,0 +1,10 @@
+build*
+.vscode
+.clang-format
+.cmake-format.yaml
+.pre-commit-config.yaml
+
+.codex
+.claude
+TODO.md
+MONITORING.md
