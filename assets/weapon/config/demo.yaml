@@ -1,0 +1,15 @@
+id: weapon_detection
+title: Weapon Detection
+
+modes:
+  mla100:
+    layout_setting: LayoutSetting_MLA100.yaml
+    feeder_setting: FeederSetting_MLA100.yaml
+    model_setting: ModelSetting_MLA100.yaml
+  mla400:
+    layout_setting: LayoutSetting_MLA400.yaml
+    feeder_setting: FeederSetting_MLA400.yaml
+    model_setting: ModelSetting_MLA400.yaml
+
+ui:
+  overlay_style: tile_compact

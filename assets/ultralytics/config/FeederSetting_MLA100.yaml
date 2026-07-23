@@ -1,0 +1,36 @@
+- type: VIDEO
+  sources:
+    - ../video/1.mp4
+- type: VIDEO
+  sources:
+    - ../video/2.mp4
+- type: VIDEO
+  sources:
+    - ../video/3.mp4
+- type: VIDEO
+  sources:
+    - ../video/4.mp4
+- type: VIDEO
+  sources:
+    - ../video/5.mp4
+- type: VIDEO
+  sources:
+    - ../video/6.mp4
+- type: VIDEO
+  sources:
+    - ../video/imagenet_1k_random_10frames_30fps_528x320_part1.mp4
+- type: VIDEO
+  sources:
+    - ../video/imagenet_1k_random_10frames_30fps_528x320_part2.mp4
+- type: VIDEO
+  sources:
+    - ../video/imagenet_1k_random_10frames_30fps_528x320_part3.mp4
+- type: VIDEO
+  sources:
+    - ../video/imagenet_1k_random_10frames_30fps_528x320_part4.mp4
+- type: VIDEO
+  sources:
+    - ../video/imagenet_1k_random_10frames_30fps_528x320_part5.mp4
+- type: VIDEO
+  sources:
+    - ../video/imagenet_1k_random_10frames_30fps_528x320_part6.mp4

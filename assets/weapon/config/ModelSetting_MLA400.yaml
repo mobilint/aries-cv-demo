@@ -1,0 +1,77 @@
+pipeline_config_defaults:
+  num_classes: 2
+  labels:
+    - gun
+    - knife
+  conf_threshold: 0.25
+  iou_threshold: 0.45
+  bbox_thickness: 2
+  decode_bbox: true
+  draw_label_text: true
+  draw_score_text: true
+  draw_detection_border: true
+
+models:
+  - model_type: OBJECT
+    subconfig:
+      input: uint8
+      post: dflfree
+    mxq_path: ../mxq/yolo26s-weapon_uint8_input_260513.mxq
+    dev_no: 0
+    core_id:
+      - { cluster: Cluster0, core: Core0 }
+      - { cluster: Cluster0, core: Core1 }
+      - { cluster: Cluster0, core: Core2 }
+      - { cluster: Cluster0, core: Core3 }
+      - { cluster: Cluster1, core: Core0 }
+      - { cluster: Cluster1, core: Core1 }
+      - { cluster: Cluster1, core: Core2 }
+      - { cluster: Cluster1, core: Core3 }
+
+  - model_type: OBJECT
+    subconfig:
+      input: uint8
+      post: dflfree
+    mxq_path: ../mxq/yolo26s-weapon_uint8_input_260513.mxq
+    dev_no: 1
+    core_id:
+      - { cluster: Cluster0, core: Core0 }
+      - { cluster: Cluster0, core: Core1 }
+      - { cluster: Cluster0, core: Core2 }
+      - { cluster: Cluster0, core: Core3 }
+      - { cluster: Cluster1, core: Core0 }
+      - { cluster: Cluster1, core: Core1 }
+      - { cluster: Cluster1, core: Core2 }
+      - { cluster: Cluster1, core: Core3 }
+
+  - model_type: OBJECT
+    subconfig:
+      input: uint8
+      post: dflfree
+    mxq_path: ../mxq/yolo26s-weapon_uint8_input_260513.mxq
+    dev_no: 2
+    core_id:
+      - { cluster: Cluster0, core: Core0 }
+      - { cluster: Cluster0, core: Core1 }
+      - { cluster: Cluster0, core: Core2 }
+      - { cluster: Cluster0, core: Core3 }
+      - { cluster: Cluster1, core: Core0 }
+      - { cluster: Cluster1, core: Core1 }
+      - { cluster: Cluster1, core: Core2 }
+      - { cluster: Cluster1, core: Core3 }
+
+  - model_type: OBJECT
+    subconfig:
+      input: uint8
+      post: dflfree
+    mxq_path: ../mxq/yolo26s-weapon_uint8_input_260513.mxq
+    dev_no: 3
+    core_id:
+      - { cluster: Cluster0, core: Core0 }
+      - { cluster: Cluster0, core: Core1 }
+      - { cluster: Cluster0, core: Core2 }
+      - { cluster: Cluster0, core: Core3 }
+      - { cluster: Cluster1, core: Core0 }
+      - { cluster: Cluster1, core: Core1 }
+      - { cluster: Cluster1, core: Core2 }
+      - { cluster: Cluster1, core: Core3 }

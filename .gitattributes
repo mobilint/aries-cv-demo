@@ -1,0 +1,2 @@
+# Large demo assets (*.mp4, *.mxq) are downloaded from Hugging Face Buckets.
+# Do not attach Git LFS filters here; see download.sh and download.bat.

@@ -1,0 +1,37 @@
+canvas_size: [1920, 1080]
+preview_asset: ../layout/layout.png
+splash_assets: []
+background_images:
+  - path: ../layout/layout.png
+    roi: [0, 0, 1920, 1080]
+worker_tiles:
+  - {feeder_index: 0, model_index: 1, roi: [288, 236, 264, 160]}
+  - {feeder_index: 1, model_index: 1, roi: [558, 236, 264, 160]}
+  - {feeder_index: 2, model_index: 1, roi: [828, 236, 264, 160]}
+  - {feeder_index: 3, model_index: 1, roi: [1098, 236, 264, 160]}
+  - {feeder_index: 4, model_index: 1, roi: [1368, 236, 264, 160]}
+  - {feeder_index: 5, model_index: 1, roi: [1638, 236, 264, 160]}
+  - {feeder_index: 0, model_index: 2, roi: [288, 402, 264, 160]}
+  - {feeder_index: 1, model_index: 2, roi: [558, 402, 264, 160]}
+  - {feeder_index: 2, model_index: 2, roi: [828, 402, 264, 160]}
+  - {feeder_index: 3, model_index: 2, roi: [1098, 402, 264, 160]}
+  - {feeder_index: 4, model_index: 2, roi: [1368, 402, 264, 160]}
+  - {feeder_index: 5, model_index: 2, roi: [1638, 402, 264, 160]}
+  - {feeder_index: 0, model_index: 3, roi: [288, 568, 264, 160]}
+  - {feeder_index: 1, model_index: 3, roi: [558, 568, 264, 160]}
+  - {feeder_index: 2, model_index: 3, roi: [828, 568, 264, 160]}
+  - {feeder_index: 3, model_index: 3, roi: [1098, 568, 264, 160]}
+  - {feeder_index: 4, model_index: 3, roi: [1368, 568, 264, 160]}
+  - {feeder_index: 5, model_index: 3, roi: [1638, 568, 264, 160]}
+  - {feeder_index: 0, model_index: 4, roi: [288, 734, 264, 160]}
+  - {feeder_index: 1, model_index: 4, roi: [558, 734, 264, 160]}
+  - {feeder_index: 2, model_index: 4, roi: [828, 734, 264, 160]}
+  - {feeder_index: 3, model_index: 4, roi: [1098, 734, 264, 160]}
+  - {feeder_index: 4, model_index: 4, roi: [1368, 734, 264, 160]}
+  - {feeder_index: 5, model_index: 4, roi: [1638, 734, 264, 160]}
+  - {feeder_index: 6, model_index: 0, roi: [288, 900, 264, 160]}
+  - {feeder_index: 7, model_index: 0, roi: [558, 900, 264, 160]}
+  - {feeder_index: 8, model_index: 0, roi: [828, 900, 264, 160]}
+  - {feeder_index: 9, model_index: 0, roi: [1098, 900, 264, 160]}
+  - {feeder_index: 10, model_index: 0, roi: [1368, 900, 264, 160]}
+  - {feeder_index: 11, model_index: 0, roi: [1638, 900, 264, 160]}

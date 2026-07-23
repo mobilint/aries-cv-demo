@@ -1,0 +1,11 @@
+id: ultralytics
+title: Ultralytics Demo
+
+modes:
+  mla100:
+    layout_setting: LayoutSetting_MLA100.yaml
+    feeder_setting: FeederSetting_MLA100.yaml
+    model_setting: ModelSetting_MLA100.yaml
+
+ui:
+  overlay_style: tile_compact

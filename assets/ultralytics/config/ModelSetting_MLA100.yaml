@@ -1,0 +1,63 @@
+pipeline_config_defaults:
+  num_classes: 80
+  conf_threshold: 0.25
+  iou_threshold: 0.45
+  decode_bbox: true
+  draw_score_text: true
+
+models:
+  - model_type: CLASSIFICATION
+    mxq_path: ../mxq/yolo26x-cls.mxq
+    subconfig:
+      input: uint8
+      post: classification
+    dev_no: 0
+    pipeline_config:
+      num_classes: 1000
+      topk: 3
+    core_id:
+      - { cluster: Cluster1, core: Core3 }
+
+  - model_type: FACE
+    mxq_path: ../mxq/yolo11s-face.mxq
+    subconfig:
+      input: uint8
+      post: anchorless
+    dev_no: 0
+    pipeline_config:
+      num_classes: 1
+      conf_threshold: 0.5
+    core_id:
+      - { cluster: Cluster1, core: Core0 }
+
+  - model_type: SEGMENTATION
+    mxq_path: ../mxq/yolo26s-seg.mxq
+    subconfig:
+      input: uint8
+      post: dflfree
+    dev_no: 0
+    core_id:
+      - { cluster: Cluster0, core: Core2 }
+      - { cluster: Cluster0, core: Core3 }
+
+  - model_type: POSE
+    mxq_path: ../mxq/yolo26s-pose.mxq
+    subconfig:
+      input: uint8
+      post: dflfree
+    dev_no: 0
+    pipeline_config:
+      num_classes: 1
+    core_id:
+      - { cluster: Cluster0, core: Core0 }
+      - { cluster: Cluster0, core: Core1 }
+
+  - model_type: OBJECT
+    mxq_path: ../mxq/yolo26s.mxq
+    subconfig:
+      input: uint8
+      post: dflfree
+    dev_no: 0
+    core_id:
+      - { cluster: Cluster1, core: Core1 }
+      - { cluster: Cluster1, core: Core2 }
